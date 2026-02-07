@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "423067825408",
+    "project_id": "bpmnow-27288",
+    "storage_bucket": "bpmnow-27288.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423067825408:android:f61fbb462564c1cc036fe5",
+        "android_client_info": {
+          "package_name": "com.example.bpmnow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB19ETPKoLo2IFfBmgrz3UovhXuqGXZ9mE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

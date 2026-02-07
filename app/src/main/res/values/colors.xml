@@ -2,4 +2,57 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary: Neon Purple -->
+    <color name="neon_purple">#FF7C4DFF</color>
+    <color name="neon_purple_dark">#FF5C2FE0</color>
+    <color name="neon_purple_light">#FFA47AFF</color>
+    <color name="neon_purple_muted">#337C4DFF</color>
+
+    <!-- Secondary: Neon Cyan -->
+    <color name="neon_cyan">#FF00E5FF</color>
+    <color name="neon_cyan_dark">#FF00B8D4</color>
+    <color name="neon_cyan_light">#FF6EFFFF</color>
+    <color name="neon_cyan_muted">#3300E5FF</color>
+
+    <!-- Tertiary: Neon Magenta -->
+    <color name="neon_magenta">#FFFF2D78</color>
+    <color name="neon_magenta_dark">#FFD6005C</color>
+    <color name="neon_magenta_light">#FFFF6DA4</color>
+    <color name="neon_magenta_muted">#33FF2D78</color>
+
+    <!-- Additional Accents -->
+    <color name="neon_green">#FF39FF14</color>
+    <color name="neon_yellow">#FFFFEA00</color>
+    <color name="neon_orange">#FFFF6D00</color>
+
+    <!-- Dark Surface Colors -->
+    <color name="background_primary">#FF0D0D0D</color>
+    <color name="background_secondary">#FF141420</color>
+    <color name="surface_card">#FF1A1A2E</color>
+    <color name="surface_card_elevated">#FF222240</color>
+    <color name="surface_input">#FF1E1E35</color>
+    <color name="divider">#33FFFFFF</color>
+
+    <!-- On-colors -->
+    <color name="on_background">#FFFFFFFF</color>
+    <color name="on_background_secondary">#B3FFFFFF</color>
+    <color name="on_background_tertiary">#66FFFFFF</color>
+    <color name="on_primary">#FF000000</color>
+    <color name="on_secondary">#FF000000</color>
+
+    <!-- Status colors -->
+    <color name="status_live">#FF39FF14</color>
+    <color name="status_pending">#FFFFEA00</color>
+    <color name="status_accepted">#FF39FF14</color>
+    <color name="status_rejected">#FFFF2D78</color>
+
+    <!-- Bottom Navigation -->
+    <color name="bottom_nav_background">#FF0A0A14</color>
+    <color name="bottom_nav_selected">#FF7C4DFF</color>
+    <color name="bottom_nav_unselected">#66FFFFFF</color>
+
+    <!-- Gradient helpers -->
+    <color name="glow_purple_start">#807C4DFF</color>
+    <color name="glow_purple_end">#007C4DFF</color>
 </resources>

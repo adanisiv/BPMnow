@@ -1,3 +1,127 @@
 <resources>
     <string name="app_name">BPMnow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <!-- Auth -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="create_account">Create Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="display_name">Display Name</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="no_account">Don\'t have an account? Sign Up</string>
+    <string name="have_account">Already have an account? Log In</string>
+    <string name="or">OR</string>
+
+    <!-- Role Selection -->
+    <string name="choose_role">I am a...</string>
+    <string name="role_clubber">Clubber</string>
+    <string name="role_dj">DJ</string>
+    <string name="clubber_desc">Discover DJs and request songs</string>
+    <string name="dj_desc">Manage sets and connect with your crowd</string>
+    <string name="continue_btn">Continue</string>
+
+    <!-- Clubber Nav -->
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="favorites">Favorites</string>
+    <string name="profile">Profile</string>
+
+    <!-- DJ Nav -->
+    <string name="dashboard">Dashboard</string>
+    <string name="analytics">Analytics</string>
+    <string name="events">Events</string>
+
+    <!-- Home -->
+    <string name="good_evening">Good Evening</string>
+    <string name="trending_genres">Trending Genres</string>
+    <string name="live_now">Live Now</string>
+    <string name="all_djs">All DJs</string>
+    <string name="no_live_djs">No DJs are live right now</string>
+
+    <!-- Search -->
+    <string name="search_djs">Search DJs…</string>
+    <string name="no_results">No results found</string>
+
+    <!-- DJ Profile -->
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="join_live_session">Join Live Session</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="followers">followers</string>
+
+    <!-- Live Session -->
+    <string name="live">LIVE</string>
+    <string name="request_song">Request a Song</string>
+    <string name="song_title">Song Title</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="submit_request">Submit Request</string>
+    <string name="end_session">End Session</string>
+    <string name="go_live">Go Live</string>
+    <string name="venue_name">Venue Name</string>
+    <string name="select_genre">Select Genre</string>
+    <string name="start_session">Start Session</string>
+    <string name="audience">Audience</string>
+    <string name="requests">Requests</string>
+    <string name="reactions">Reactions</string>
+
+    <!-- DJ Profile Editor -->
+    <string name="dj_name">DJ Name</string>
+    <string name="bio">Bio</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="instagram_url">Instagram URL</string>
+    <string name="soundcloud_url">SoundCloud URL</string>
+    <string name="spotify_url">Spotify URL</string>
+    <string name="select_genres">Select Genres</string>
+    <string name="social_links">Social Links</string>
+
+    <!-- Events -->
+    <string name="add_event">Add Event</string>
+    <string name="event_title">Event Title</string>
+    <string name="event_description">Description</string>
+    <string name="event_date">Date &amp; Time</string>
+    <string name="venue_address">Venue Address</string>
+    <string name="no_events">No upcoming events</string>
+
+    <!-- Analytics -->
+    <string name="genre_breakdown">Genre Breakdown</string>
+    <string name="top_songs">Top Requested Songs</string>
+    <string name="engagement_stats">Engagement Stats</string>
+    <string name="total_sessions">Total Sessions</string>
+    <string name="total_requests">Total Requests</string>
+    <string name="total_reactions">Total Reactions</string>
+    <string name="avg_audience">Avg Audience</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="logout">Log Out</string>
+    <string name="about">About</string>
+    <string name="notifications">Notifications</string>
+    <string name="app_version">Version 1.0</string>
+
+    <!-- Song Request Status -->
+    <string name="pending">Pending</string>
+    <string name="accepted">Accepted</string>
+    <string name="rejected">Rejected</string>
+    <string name="played">Played</string>
+
+    <!-- Empty States -->
+    <string name="empty_favorites">You haven\'t followed any DJs yet</string>
+    <string name="empty_requests">No song requests yet</string>
+    <string name="discover_djs">Discover DJs and start following!</string>
+
+    <!-- Additional -->
+    <string name="dj_profile_image">DJ Profile Image</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="log_out">Log Out</string>
+    <string name="instagram">Instagram</string>
+    <string name="soundcloud">SoundCloud</string>
+    <string name="spotify">Spotify</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
