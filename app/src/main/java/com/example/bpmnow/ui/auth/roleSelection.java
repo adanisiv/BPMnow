@@ -1,5 +1,9 @@
 package com.example.bpmnow.ui.auth;
 
+
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.activity.OnBackPressedCallback;
@@ -8,9 +12,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.bpmnow.MainActivity;
 import com.example.bpmnow.R;
+import com.example.bpmnow.utils.Constants;
+import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
 
 /**
@@ -28,6 +35,9 @@ public class roleSelection extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private String selectedRole = null;
+    private MaterialCardView cardClubber, cardDJ;
+    private MaterialButton btnContinue;
 
     public roleSelection() {
         // Required empty public constructor
@@ -75,28 +85,47 @@ public class roleSelection extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_role_selection, container, false);
 
-        MaterialCardView cardClubber = view.findViewById(R.id.cardClubber);
-        MaterialCardView cardDJ = view.findViewById(R.id.cardDJ);
+        cardClubber = view.findViewById(R.id.cardClubber);
+        cardDJ = view.findViewById(R.id.cardDJ);
+        btnContinue = view.findViewById(R.id.btnContinue);
 
-        cardClubber.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Getting the method from MainActivity (this is the approach because the standard is to have one activity
-//                and just change the navigation graphs, and we do this from the main activity, but we cant access
-//                the elements of the fragment from the activity so we can do this)
-                ((MainActivity) requireActivity()).switchToGraphClubber();
-            }
-        });
-
-        cardDJ.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                Getting the method from MainActivity (this is the approach because the standard is to have one activity
-//                and just change the navigation graphs, and we do this from the main activity, but we cant access
-//                the elements of the fragment from the activity so we can do this)
-        ((MainActivity) requireActivity()).switchToGraphDJ();
-            }
-        });
+        cardClubber.setOnClickListener(v -> selectRole(Constants.ROLE_CLUBBER));
+        cardDJ.setOnClickListener(v -> selectRole(Constants.ROLE_DJ));
+        btnContinue.setOnClickListener(v -> confirmRole());
         return view;
+    }
+
+    private void selectRole(String role) {
+        selectedRole = role;
+        btnContinue.setEnabled(true);
+        btnContinue.setAlpha(1f);
+        if (Constants.ROLE_CLUBBER.equals(role)) {
+            cardClubber.setStrokeWidth(3);
+            cardDJ.setStrokeWidth(1);
+            cardClubber.setAlpha(1f);
+            cardDJ.setAlpha(0.6f);
+        } else {
+            cardDJ.setStrokeWidth(3);
+            cardClubber.setStrokeWidth(1);
+            cardDJ.setAlpha(1f);
+            cardClubber.setAlpha(0.6f);
+        }
+    }
+
+    private void confirmRole() {
+        if (selectedRole == null) return;
+        if (selectedRole.equals(Constants.ROLE_CLUBBER)) {
+//                Getting the method from MainActivity (this is the approach because the standard is to have one activity
+//                and just change the navigation graphs, and we do this from the main activity, but we cant access
+//                the elements of the fragment from the activity so we can do this)
+
+            ((MainActivity) requireActivity()).switchToGraphClubber();
+        } else if (selectedRole.equals(Constants.ROLE_DJ)) {
+//                Getting the method from MainActivity (this is the approach because the standard is to have one activity
+//                and just change the navigation graphs, and we do this from the main activity, but we cant access
+//                the elements of the fragment from the activity so we can do this)
+
+            ((MainActivity) requireActivity()).switchToGraphDJ();
+        }
     }
 }

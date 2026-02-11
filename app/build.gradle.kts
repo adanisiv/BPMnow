@@ -35,9 +35,9 @@ android {
 }
 
 dependencies {
-    implementation(libs.material.v1110)
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.auth)
+    implementation(libs.firebase.firestore)
     implementation(libs.firebase.analytics)
     implementation(libs.appcompat)
     implementation(libs.material)

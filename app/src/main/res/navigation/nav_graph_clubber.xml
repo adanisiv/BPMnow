@@ -9,5 +9,14 @@
         android:id="@+id/formClubber"
         android:name="com.example.bpmnow.ui.clubber.formClubber"
         android:label="fragment_form_clubber"
-        tools:layout="@layout/fragment_form_clubber" />
+        tools:layout="@layout/fragment_form_clubber" >
+        <action
+            android:id="@+id/action_formClubber_to_homeClubber"
+            app:destination="@id/homeClubber" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeClubber"
+        android:name="com.example.bpmnow.ui.clubber.homeClubber"
+        android:label="homeClubber"
+        tools:layout="@layout/fragment_home_clubber"/>
 </navigation>
