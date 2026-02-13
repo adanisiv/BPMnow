@@ -7,6 +7,8 @@ public final class Constants {
     private Constants() {}
 
     // Firestore collections
+    public static final String SPOTIFY_CLIENT_ID = "2d97d1c2dfa94a24819ccab72eb0dfaa";
+    public static final String SPOTIFY_CLIENT_SECRET = "b1975f6ea8894da1a00e8410dcdaecd7";
     public static final String COLLECTION_USERS = "users";
     public static final String COLLECTION_DJ_PROFILES = "djProfiles";
     public static final String COLLECTION_LIVE_SESSIONS = "liveSessions";

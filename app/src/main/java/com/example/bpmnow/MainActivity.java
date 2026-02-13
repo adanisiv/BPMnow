@@ -17,7 +17,6 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.card.MaterialCardView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -74,6 +73,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.bottom_navigation_clubber).setVisibility(View.GONE);
     }
 
+    public void switchToGraphDJ() {
+        navController.setGraph(R.navigation.nav_graph_dj);
+    }
+
     //    Set the visibility of the bottom navigation bar & connect it to the NavController
 //    To be able to navigate between fragments
     public void setClubberBottomNavigationVisible() {
@@ -90,10 +93,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void setBottomNavigationInvisible() {
         findViewById(R.id.bottom_navigation_clubber).setVisibility(View.GONE);
-    }
-
-    public void switchToGraphDJ() {
-        navController.setGraph(R.navigation.nav_graph_dj);
     }
 
     public void startSpotifyLogin() {

@@ -19,4 +19,9 @@
         android:name="com.example.bpmnow.ui.dj.homeDJ"
         android:label="fragment_home_d_j"
         tools:layout="@layout/fragment_home_d_j" />
+    <fragment
+        android:id="@+id/playlistsDJ"
+        android:name="com.example.bpmnow.ui.dj.platlistsDJ"
+        android:label="fragment_platlists_d_j"
+        tools:layout="@layout/fragment_platlists_d_j" />
 </navigation>

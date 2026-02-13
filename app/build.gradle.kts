@@ -51,4 +51,6 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation(libs.recyclerview)
     implementation(libs.browser)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
 }
